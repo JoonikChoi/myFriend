@@ -22,6 +22,24 @@ function App() {
     "--sendbird-light-primary-400": "rgb(136, 188, 132)",
   };
 
+  /////////////////////
+  // useEffect(()=> {
+  //   // fetch('http://localhost:3030', {
+  //   //     method : "GET"   
+  //   // }).then( (res) =>{
+  //   //     console.log("response OK");
+  //   // });
+    
+  //   fetch('http://localhost:3030', {method : "GET"})
+	//   .then((response) => { console.log(response); });
+  // }, []);
+  // fetch('http://localhost:3030', {method : "GET"})
+  // .then((response) => { console.log(response); });
+
+
+
+  /////////////////////
+
   const [stringSet] = useState({
     MESSAGE_STATUS__YESTERDAY: "어제",
     CHANNEL_PREVIEW_MOBILE_LEAVE: "채팅방 나가기",

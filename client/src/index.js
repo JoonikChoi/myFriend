@@ -3,13 +3,21 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 //import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Joonik from "./Joonik";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<App />}></Route>
+    <Route path="/joonik/*" element={<Joonik />}></Route>
+  </Routes>
+  </BrowserRouter>
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  // document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
